@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizBoost AI — Small Business Marketing Assistant</title>
+<style>
+:root{--ink:#172033;--muted:#65708a;--line:#e5e9f2;--bg:#f6f7fb;--purple:#6657e8;--purple2:#5142d4;--card:#fff;--green:#e8f8ef}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:#fff;border-bottom:1px solid var(--line);padding:17px max(20px,calc((100% - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.5px}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#7668ff,#38bdf8);display:grid;place-items:center;color:white;font-size:20px}
+.tag{font-size:12px;padding:6px 10px;border-radius:20px;background:#f0edff;color:#5142d4;font-weight:700}
+main{max-width:1160px;margin:0 auto;padding:34px 20px 56px}.hero{display:grid;grid-template-columns:1.4fr .8fr;gap:25px;align-items:center;margin-bottom:28px}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:1.4px;color:var(--purple);font-weight:800}.hero h1{font-size:clamp(32px,4vw,47px);line-height:1.08;letter-spacing:-1.8px;margin:10px 0 13px}.hero p{color:var(--muted);line-height:1.65;max-width:640px;margin:0}.hero-card{background:linear-gradient(135deg,#211a58,#5343c8);color:#fff;border-radius:22px;padding:24px;min-height:180px;box-shadow:0 16px 36px #5142d422}.hero-card .spark{font-size:29px}.hero-card h3{margin:14px 0 7px;font-size:20px}.hero-card p{color:#e0ddff;font-size:14px}
+.layout{display:grid;grid-template-columns:360px 1fr;gap:22px;align-items:start}.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 5px 18px #17203308}.panel h2{font-size:19px;margin:0 0 6px}.sub{font-size:13px;color:var(--muted);margin:0 0 21px;line-height:1.5}
+label{display:block;font-size:13px;font-weight:700;margin:16px 0 7px}input,select,textarea{width:100%;border:1px solid #dce1ed;border-radius:10px;padding:11px 12px;font:inherit;font-size:14px;color:var(--ink);background:#fff;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--purple);box-shadow:0 0 0 3px #6657e81c}
+button{border:0;border-radius:10px;padding:11px 14px;font:inherit;font-size:14px;font-weight:750;cursor:pointer;transition:.15s}button:hover{transform:translateY(-1px)}.primary{width:100%;background:var(--purple);color:white;margin-top:20px}.primary:hover{background:var(--purple2)}.secondary{background:#f0edff;color:#5142d4}.outline{background:white;border:1px solid var(--line);color:var(--ink)}.results-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.results-head h2{margin:0}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.result{border:1px solid var(--line);border-radius:14px;padding:17px;background:#fff;min-height:220px;display:flex;flex-direction:column}.result .small-label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--purple);font-weight:800}.result h3{font-size:16px;margin:9px 0}.result p{font-size:14px;color:#46516a;line-height:1.6;white-space:pre-wrap;margin:0 0 15px}.result .actions{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}.result .actions button{font-size:12px;padding:8px 10px}.empty{border:1px dashed #cbd2e3;border-radius:14px;padding:35px 20px;text-align:center;color:var(--muted);grid-column:1/-1}.empty .emoji{font-size:35px}.empty h3{color:var(--ink);margin:12px 0 6px}.empty p{font-size:14px;line-height:1.6;max-width:420px;margin:auto}.notice{margin-top:18px;background:#fff9e9;border:1px solid #f4e2a9;color:#765719;border-radius:12px;padding:12px 14px;font-size:12px;line-height:1.5}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#172033;color:white;padding:10px 15px;border-radius:9px;font-size:13px;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1}
+footer{max-width:1160px;margin:auto;padding:0 20px 25px;color:#7b8498;font-size:12px;text-align:center}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.hero-card{min-height:unset}.layout{grid-template-columns:1fr}.result-grid{grid-template-columns:1fr}}@media(max-width:480px){main{padding:23px 13px 40px}header{padding:13px}.tag{display:none}.panel{padding:17px}.hero h1{font-size:34px}}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="logo">✦</div>BizBoost AI</div><span class="tag">EARLY DEMO · FREE</span></header>
+<main>
+  <section class="hero">
+    <div><div class="eyebrow">Your tiny marketing team</div><h1>Good ideas for your business.<br>Ready in minutes.</h1><p>Create social captions, promotion messages, and content ideas without staring at a blank page. Tell BizBoost a little about your business to get started.</p></div>
+    <div class="hero-card"><div class="spark">✦ ✧</div><h3>Less time thinking. More time growing.</h3><p>Made for salons, cafés, boutiques, home businesses, and local shops.</p></div>
+  </section>
+  <section class="layout">
+    <div class="panel">
+      <h2>Tell us about your business</h2><p class="sub">A few details help tailor the content to your customers.</p>
+      <form id="bizForm">
+        <label for="business">Business name</label><input id="business" placeholder="e.g. Glow Beauty Studio">
+        <label for="type">Business type</label><select id="type"><option value="salon">Beauty salon / makeup artist</option><option value="boutique">Boutique / clothing store</option><option value="cafe">Café / bakery</option><option value="home">Home business / handmade products</option><option value="fitness">Fitness / yoga studio</option><option value="other">Other small business</option></select>
+        <label for="platform">Where will you post?</label><select id="platform"><option>Instagram</option><option>Facebook</option><option>WhatsApp</option></select>
+        <label for="goal">What do you want to promote?</label><select id="goal"><option value="offer">A special offer or discount</option><option value="awareness">Introduce my business</option><option value="product">A product or service</option><option value="engagement">Get more comments and enquiries</option><option value="trust">Build trust with customers</option></select>
+        <label for="details">Offer or details (optional)</label><textarea id="details" rows="3" placeholder="e.g. 15% off hair spa this weekend"></textarea>
+        <label for="tone">Writing style</label><select id="tone"><option value="friendly">Friendly and warm</option><option value="professional">Professional</option><option value="playful">Fun and playful</option><option value="luxury">Premium and elegant</option></select>
+        <button class="primary" type="submit">✦ Generate my content</button>
+      </form>
+      <div class="notice"><strong>Prototype note:</strong> This first version uses built-in examples to demonstrate the workflow. It is not connected to a live AI model yet. We'll add a secure AI connection in a later step.</div>
+    </div>
+    <div class="panel">
+      <div class="results-head"><div><h2>Your content studio</h2><p class="sub" style="margin:5px 0 0">Edit, copy, and use these ideas as a starting point.</p></div><button class="outline" id="clearBtn" type="button">Clear</button></div>
+      <div class="result-grid" id="results">
+        <div class="empty"><div class="emoji">💡</div><h3>Your next post starts here</h3><p>Fill in your business details and select “Generate my content” to create a caption, hashtags, a promotional message, and post ideas.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>BizBoost AI · Early prototype · Always review generated content before publishing.</footer>
+<div class="toast" id="toast">Copied!</div>
+<script>
+const $ = id => document.getElementById(id);
+const businessLabels={salon:"beauty and self-care",boutique:"style and fashion",cafe:"coffee, treats, and good moments",home:"thoughtfully made products",fitness:"movement and wellbeing",other:"your local community"};
+const goalLabels={offer:"special offer",awareness:"business introduction",product:"featured service or product",engagement:"customer conversation",trust:"customer trust"};
+function generate(){
+ const name=$("business").value.trim()||"Our Business";
+ const type=$("type").value, platform=$("platform").value, goal=$("goal").value, details=$("details").value.trim(), tone=$("tone").value;
+ const niche=businessLabels[type], promo=details||({offer:"a special offer for our lovely customers",awareness:"what makes our business special",product:"our latest product or service",engagement:"what our customers would love to see next",trust:"the care we put into every customer experience"}[goal]);
+ const emoji=tone==="professional"?"":tone==="luxury"?" ✨":tone==="playful"?" 💖":" 🌿";
+ let opener={
+  offer:`A little treat for you!${emoji}`,
+  awareness:`Hello from ${name}!${emoji}`,
+  product:`Something special is waiting for you.${emoji}`,
+  engagement:`We want to hear from you!${emoji}`,
+  trust:`Made with care, shared with love.${emoji}`
+ }[goal];
+ let caption=`${opener}\n\nAt ${name}, we love everything about ${niche}. ${promo.charAt(0).toUpperCase()+promo.slice(1)}.\n\nHave a question or want to know more? Send us a ${platform==="WhatsApp"?"WhatsApp message":"DM"} — we'd be happy to help!\n\nSave this post and share it with someone who might love it.`;
+ if(tone==="professional") caption=`Discover ${name}.\n\nWe are passionate about ${niche} and helping our customers find the right fit for their needs. ${promo.charAt(0).toUpperCase()+promo.slice(1)}.\n\nContact us via ${platform} to learn more. We look forward to hearing from you.`;
+ if(tone==="playful") caption=`Hey you! 👋 Ready for a little ${niche} magic?\n\nAt ${name}, ${promo}. 🎉\n\nTag a friend who needs to see this, then message us on ${platform} for details. Let's make your day a little brighter! 💫`;
+ if(tone==="luxury") caption=`A thoughtful touch makes all the difference. ✨\n\nWelcome to ${name}, where ${niche} meet a considered experience. ${promo.charAt(0).toUpperCase()+promo.slice(1)}.\n\nFor enquiries and details, connect with us via ${platform}.`;
+ const tags=type==="salon"?"#BeautyCare #SalonLove #SelfCare #BeautyTips #LocalBusiness":type==="boutique"?"#StyleInspiration #BoutiqueFinds #FashionDaily #ShopSmall #LocalBusiness":type==="cafe"?"#CafeLife #FreshlyMade #FoodLovers #SupportLocal #LocalBusiness":type==="fitness"?"#WellnessJourney #MoveYourBody #HealthyHabits #FitnessCommunity #LocalBusiness":"#SmallBusiness #ShopLocal #MadeWithCare #SupportSmallBusiness #DiscoverLocal";
+ const message=`Hi! Thanks for connecting with ${name}. 😊 ${details?`Here's a little more about our current update: ${details}. `:"We'd be happy to share more details about our products and services. "}What would you like to know?`;
+ const ideas=[
+  {title:"Caption for your post",label:"SOCIAL CAPTION",text:caption},
+  {title:"Hashtags to try",label:"DISCOVERY",text:tags},
+  {title:"Customer message",label:"QUICK REPLY",text:message},
+  {title:"3 post ideas",label:"CONTENT IDEAS",text:`1. Behind the scenes: show how you prepare ${niche}.\n2. Helpful tip: share one simple tip your customers can use today.\n3. Customer spotlight: share a real review or customer story, with permission.`}
+ ];
+ $("results").innerHTML="";
+ ideas.forEach(item=>{
+  const card=document.createElement("article");card.className="result";
+  const label=document.createElement("div");label.className="small-label";label.textContent=item.label;
+  const h=document.createElement("h3");h.textContent=item.title;
+  const p=document.createElement("p");p.textContent=item.text;
+  const actions=document.createElement("div");actions.className="actions";
+  const copy=document.createElement("button");copy.className="secondary";copy.textContent="Copy text";copy.addEventListener("click",()=>copyText(item.text));
+  const edit=document.createElement("button");edit.className="outline";edit.textContent="Edit";edit.addEventListener("click",()=>{p.contentEditable=p.contentEditable!=="true";if(p.contentEditable==="true"){p.focus();edit.textContent="Done editing";}else edit.textContent="Edit";});
+  actions.append(copy,edit);card.append(label,h,p,actions);$("results").append(card);
+ });
+}
+function copyText(text){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(showToast).catch(()=>fallbackCopy(text));}else fallbackCopy(text)}
+function fallbackCopy(text){const ta=document.createElement("textarea");ta.value=text;document.body.append(ta);ta.select();try{document.execCommand("copy");showToast()}catch(e){alert("Please select and copy the text manually.")}ta.remove()}
+function showToast(){$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),1600)}
+$("bizForm").addEventListener("submit",e=>{e.preventDefault();generate()});
+$("clearBtn").addEventListener("click",()=>{$("results").innerHTML='<div class="empty"><div class="emoji">💡</div><h3>Your next post starts here</h3><p>Fill in your business details and select “Generate my content” to create a caption, hashtags, a promotional message, and post ideas.</p></div>'});
+</script>
+</body>
+</html>
